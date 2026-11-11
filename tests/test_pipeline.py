@@ -1,13 +1,15 @@
 
 import pandas as pd
 
-from src.pipeline import validate_readings, transform_data
+import src.validate as validation
+import src.transform as transformation
+
+from src.validate import validate_readings
+from src.transform import transform_data
 
 
 def test_validation_rejects_invalid_records(tmp_path, monkeypatch):
-    import src.pipeline as pipeline
-
-    monkeypatch.setattr(pipeline, "REPORTS_DIR", tmp_path)
+    monkeypatch.setattr(validation, "REPORTS_DIR", tmp_path)
 
     meters = pd.DataFrame({
         "meter_id": ["M001"],
@@ -34,10 +36,8 @@ def test_validation_rejects_invalid_records(tmp_path, monkeypatch):
 
 
 def test_transformation_creates_daily_summary(tmp_path, monkeypatch):
-    import src.pipeline as pipeline
-
-    monkeypatch.setattr(pipeline, "PROCESSED_DIR", tmp_path)
-    monkeypatch.setattr(pipeline, "REPORTS_DIR", tmp_path)
+    monkeypatch.setattr(transformation, "PROCESSED_DIR", tmp_path)
+    monkeypatch.setattr(transformation, "REPORTS_DIR", tmp_path)
 
     valid = pd.DataFrame({
         "reading_id": ["R001", "R002"],
@@ -71,3 +71,4 @@ def test_transformation_creates_daily_summary(tmp_path, monkeypatch):
     assert len(clean) == 2
     assert len(daily) == 1
     assert daily.iloc[0]["total_consumption_litres"] == 500.0
+
