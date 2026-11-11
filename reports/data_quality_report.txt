@@ -1,0 +1,18 @@
+
+WATERWATCH DATA QUALITY REPORT
+================================
+
+Total records processed: 62
+Valid records: 57
+Rejected records: 5
+
+Data quality score: 91.94%
+
+Total recorded water consumption:
+26918.60 litres
+
+Daily consumption records: 29
+Potential anomalies detected: 2
+
+Note: Potential anomalies are unusual consumption patterns,
+not confirmed water leaks.

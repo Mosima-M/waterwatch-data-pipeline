@@ -1,0 +1,30 @@
+reading_date,building_id,building_name,total_consumption_litres,number_of_readings,potential_anomaly
+2026-10-01,B001,Sunrise Apartments,509.08,2,False
+2026-10-01,B002,Central Offices,852.99,2,False
+2026-10-01,B003,Green Valley School,294.98,2,False
+2026-10-01,B004,Riverside Complex,856.52,2,False
+2026-10-02,B001,Sunrise Apartments,920.1299999999999,2,False
+2026-10-02,B002,Central Offices,598.9000000000001,2,False
+2026-10-02,B003,Green Valley School,1365.56,2,True
+2026-10-02,B004,Riverside Complex,1188.07,2,False
+2026-10-03,B001,Sunrise Apartments,359.14,2,False
+2026-10-03,B002,Central Offices,1266.77,2,False
+2026-10-03,B003,Green Valley School,362.9,2,False
+2026-10-03,B004,Riverside Complex,1571.88,2,False
+2026-10-04,B001,Sunrise Apartments,717.52,2,False
+2026-10-04,B002,Central Offices,1170.5,2,False
+2026-10-04,B003,Green Valley School,1115.5700000000002,2,False
+2026-10-04,B004,Riverside Complex,1163.4299999999998,2,False
+2026-10-05,B001,Sunrise Apartments,1485.46,2,True
+2026-10-05,B002,Central Offices,394.03,2,False
+2026-10-05,B003,Green Valley School,699.4100000000001,2,False
+2026-10-05,B004,Riverside Complex,1298.22,2,False
+2026-10-06,B001,Sunrise Apartments,1027.28,2,False
+2026-10-06,B002,Central Offices,1144.7,2,False
+2026-10-06,B003,Green Valley School,1071.19,2,False
+2026-10-06,B004,Riverside Complex,883.5899999999999,2,False
+2026-10-07,B001,Sunrise Apartments,760.79,2,False
+2026-10-07,B002,Central Offices,1515.87,2,False
+2026-10-07,B003,Green Valley School,897.22,2,False
+2026-10-07,B004,Riverside Complex,926.9,2,False
+2026-10-08,B001,Sunrise Apartments,500.0,1,False

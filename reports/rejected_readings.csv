@@ -1,0 +1,6 @@
+reading_id,meter_id,reading_timestamp,consumption_litres,parsed_timestamp,rejection_reason
+R9991,M00101,2026-10-08 10:00:00,-150.0,2026-10-08 10:00:00,Negative consumption; 
+R9992,UNKNOWN,2026-10-08 11:00:00,350.0,2026-10-08 11:00:00,Unknown meter ID; 
+R9993,,2026-10-08 12:00:00,200.0,2026-10-08 12:00:00,Missing meter ID; 
+R9994,M00101,invalid-date,400.0,,Invalid timestamp; 
+R9995,M00102,2026-10-08 15:00:00,600.0,2026-10-08 15:00:00,Duplicate reading ID; 
